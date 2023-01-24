@@ -22,6 +22,15 @@ void generateParentheses(string &strSoFar, vector<string> &result, int open, int
     }
     
 }
+
+vector<string> generateParentheses(const int n){
+    vector<string> result;
+    int open = n, close = n;
+    string strSoFar = "";
+    generateParentheses(strSoFar, result, open, close);
+    return result;
+}
+
 int main(){
     return 0;
 }
